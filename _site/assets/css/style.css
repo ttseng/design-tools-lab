@@ -1,0 +1,338 @@
+:root {
+    --blue: #2C70FF;
+    --green:#9ffd9f;
+    --cerulean:#a7daff;
+    --lightOrange:#ffb3a3;
+    --orange: #f8a625;
+    --purple:#ffafff;
+    --gray: #676767;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 4rem;
+}
+
+body {
+    font-family: "Sarabun", sans-serif;
+    line-height: 1.5;
+}
+
+h1, h2, h3 {
+    font-family: "Sarabun", sans-serif;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+a {
+    text-decoration: none;
+    color: var(--blue);
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+p {
+    margin: 10px 0;
+}
+
+hr {
+    border: 0;
+    border-bottom: solid 1.5px #d9d9d9;
+    margin: 10px 0;
+}
+
+nav {
+    display: flex;
+    position: sticky;
+    top: 0;
+    background: white;
+    align-items: center;
+    padding: 0 15px;
+    height: 3.5rem;
+    width: 100%;
+    border-bottom: 1px solid #eaeaea;
+}
+
+nav .left {
+    display: flex;
+    gap: 0.5em;
+    align-items: center;
+}
+
+nav .left img {
+    width: 30px;
+}
+
+nav .left .title {
+    font-weight: 600;
+    color: black;
+    font-size: larger;
+}
+
+nav .right {
+    display: flex;
+    gap: 1em;
+}
+
+nav>a {
+    display: block;
+    padding: 1rem 2rem;
+}
+
+nav>a:hover {
+    color: aqua;
+}
+
+.spacer {
+    flex-grow: 1;
+}
+
+.highlight {
+    font-weight: 500;
+    font-size: large;
+    color: var(--blue);
+}
+
+main {
+    max-width: 70rem;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+    min-height: 100vh;
+}
+
+main>h1 {
+    margin: 2rem 0 0.5rem;
+}
+
+main>img {
+    border-radius: 5px;
+}
+
+.banner {
+    margin: 0 auto;
+    gap: 5em;
+}
+
+.banner img {
+    margin: 0 auto;
+    max-width: 300px;
+}
+
+.section {
+    margin: 15px 0 50px;
+}
+
+.publication {
+    margin: 10px 0;
+    border-top: 0.5px solid #cccccc;
+    padding: 10px 0;
+}
+
+.publication .thumbnail {
+    flex-shrink: 0;
+}
+
+.publication:last-of-type {
+    border-bottom: 0.5px solid #cccccc;
+}
+
+.publication img {
+    object-fit: contain;
+    border-radius: 5px;
+    border: 0.5px solid #646464;
+}
+
+.publication .info {
+    display: flex;
+    flex-direction: column;
+}
+
+.publication .info .heading {
+    display: flex;
+}
+
+.publication .title {
+    font-weight: 600;
+    font-size: 1.5em;
+    line-height: 1.1em;
+    margin-bottom: 7px;
+}
+
+.publication .authors {
+    margin-bottom: 5px;
+    color: var(--gray);
+}
+
+.publication .description {
+    margin: 10px 0;
+    font-weight: 300;
+}
+
+.publication .venue {
+    font-size: small;
+    margin-bottom: 10px;
+}
+
+.publication .areas {
+    display: flex;
+    gap: 0.5em;
+}
+
+.publication .links {
+    display: flex;
+    gap: 1em;
+    font-size: smaller;
+}
+.award {
+    background: gold;
+    border-radius: 3px;
+    margin: 0 10px;
+    padding: 0px 5px 3px;
+}
+
+.person {
+    text-align: center;
+    display: inline-block;
+}
+
+.person img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 7px;
+}
+
+.person .name {
+    font-size: large;
+    font-weight: 700;
+}
+
+.area {
+    color: black;
+    padding: 0px 4px 2px;
+    border-radius: 4px;
+}
+
+.area.machine-learning {
+    background: var(--green);
+}
+
+.area.visual-arts {
+    background: var(--purple);
+}
+
+.area.electronics {
+    background: var(--lightOrange);
+}
+
+.area.design-documentation {
+    background: var(--cerulean);
+}
+
+.area.badge {
+    font-size: small;
+}
+
+.icon {
+    display: inline-block;
+}
+.icon svg {
+    width: 10px;
+    height: 10px;
+}
+
+.join {
+    border-radius: 6px;
+    padding: 20px 30px;
+    border: 7px solid;
+    border-image: linear-gradient(to right, #28FFBB, #FFFA06, #FFFA06, #C9FF27, #C9FF27, #EE9EFF) 5;
+}
+
+.gradient-fill {
+    display: inline-block;
+    border-radius: 5px;
+    border: 5px solid;
+    border-image: linear-gradient(to right, #28FFBB, #FFFA06, #FFFA06, #C9FF27, #C9FF27, #EE9EFF) 5;
+    padding: 15px 10px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.gradient-fill a {
+    font-weight: bold;
+}
+
+.join h3 {
+    margin-bottom: 15px;
+}
+
+.join h4 {
+    border-bottom: 1px solid darkgrey;
+    display: inline;
+}
+
+.join a {
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    font-size: small;
+}
+
+@media (max-width: 700px) {
+    .banner {
+        text-align: center;
+    }
+    .banner .description {
+        margin: 15px; 0;
+    }
+    .join {
+        margin: 20px 0;
+    }
+}
+
+@media (min-width: 700px) {
+    .banner {
+        display: flex;
+    }
+    .banner img {
+        margin: 0 auto;
+    }
+    .publication {
+        display: flex;
+        gap: 1em;
+    }
+    .publication img {
+        width: 250px;
+        height: 150px;
+    }
+    .publication .info {
+        max-width: 75%;
+    }
+    .people {
+        display: flex;
+        gap: 2em;
+    }
+    .join {
+        max-width: 80%;
+    }
+}

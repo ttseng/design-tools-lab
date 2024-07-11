@@ -1,0 +1,24 @@
+<h2>People</h2>
+<div class="section" id="people">
+    <div class="people" id="people">
+        {%- for person in collections.people | reverse -%}
+        <div class="person">
+            <img src="{{ person.data.img }}"/>
+            <div class="info">
+                <div class="name">
+                    {%- if (person.data.website) -%}
+                        <a href="{{ person.data.website }}" target="_external">    
+                            {{ person.data.name }}
+                        </a>
+                    {%- else -%}
+                        {{ person.data.name }}
+                    {%- endif -%}
+                </div>
+                <div class="role">{{ person.data.role }}</div>
+            </div>
+        </div>
+        {%- endfor -%}
+
+        {% include "partials/_join.njk" %}
+    </div>
+</div>

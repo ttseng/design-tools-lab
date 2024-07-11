@@ -1,0 +1,61 @@
+<div class="section" id="publications">
+  <h2>Publications</h2>
+
+  <div class="publications">
+      {%- for pub in collections.publications | reverse -%}
+      <div class="publication">
+        <div class="thumbnail">
+          <img src="{{ pub.data.img }}"/>
+        </div>
+        
+        <div class="info">
+          <div class="heading">
+            <div class="venue">
+              {{ pub.data.conference }} {{ pub.data.year }} 
+              {%- if (pub.data.award) -%}
+                <span class="award"> 
+                  {% FontAwesomeIcon
+                      name = "award",
+                      type = "solid"
+                  %}
+                  <span class="award-title">{{ pub.data.award}}</span>
+                </span>
+              {%- endif -%}
+            </div>
+            <div class="spacer"></div>
+            <div class="links">
+              <a href="{{ pub.data.doi }}" target="_blank">paper</a>
+              {%- if (pub.data.video) -%}
+                <a href="{{ pub.data.video }}" target="_blank">video</a>
+              {%- endif -%}
+              {%- if (pub.data.presentation) -%}
+                <a href="{{ pub.data.presentation }}" target="_blank">presentation</a>
+              {%- endif -%}
+            </div>
+          </div>
+
+          <div class="title">
+            {{ pub.data.title }}
+          </div>
+
+          <div class="authors">
+            {{ pub.data.authors }}
+          </div>
+
+          <div class="description">
+              {{ pub.data.description }}
+          </div>
+
+          <div class="areas">
+            {%- for area in pub.data.areas -%}
+              <span class="{{area}} area badge">{{ area }}</span>
+            {%- endfor -%}
+          </div>
+          
+          <div class="spacer"></div>
+
+        </div><!-- end info -->
+        </div><!-- end publication -->
+      {%- endfor -%}
+  </div><!-- end publications -->
+</div><!-- end section -->
