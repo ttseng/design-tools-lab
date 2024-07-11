@@ -21,10 +21,23 @@ npm start
 ```
 
 ## Adding new people
-Copy the example in `src/people/tiffany_tseng.md` to add your info.  Add a headshot to `src/assets/images/people` and include this in your markdown file.
+Copy the example in `src/people/tiffany_tseng.md` to add your info. 
+
+Name the file `firstname_lastname.md`. 
+
+Add a headshot to `src/assets/images/people` and include this in your markdown file.
+
+| Property | Description | Required | Example |
+| ----------- | ----------- | ----------- | ----------- |
+| name | full name | ✅ | "Tiffany Tseng" |
+| img | path to headshot | ✅ | "assets/images/people/tiffany.jpeg" |
+| role | role in lab | ✅ | "Assistant Professor" |
+| website | link to your website |  | https://tifftseng.com/ |
 
 ## Adding new publications
-Copy any of the markdown examples in `src/publications`
+Copy any of the markdown examples in `src/publications` and name the file `paper-name-conference.md`
+
+Add a thumbnail for each publication to `src/assets/images/publications`.  Images should be ~1250x700.
 
 You can add these properties:
 
@@ -42,18 +55,3 @@ You can add these properties:
 | areas | array of research areas for tagging purposes (can choose from machine-learning, electronics, design-documentation, and visual-arts) | | ["machine-learning", "electronics"] |
 | presentation | link to presentation video | | "https://www.youtube.com/watch?v=Pez3hD0dRVU" |
 | award | description of any associated paper awards | | "best paper" |
-
-```
----
-title: "title of the paper"
-authors: "comma separated, author list"
-description: "snippet of abstract"
-conference: "conference name"
-date: 2024-02-08
-year: 2024
-img: "assets/images/publications/keyframer.gif"
-doi: "https://arxiv.org/pdf/2402.06071"
-video: "https://machinelearning.apple.com/research/keyframer"
-areas: ["machine-learning", "visual-arts"]
----
-```
