@@ -199,6 +199,7 @@ main>img {
     display: flex;
     gap: 1em;
     font-size: smaller;
+    margin-top: -3px;
 }
 .award {
     background: gold;
