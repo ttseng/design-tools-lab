@@ -36,6 +36,7 @@ h1 {
 
 h2 {
     font-size: 2em;
+    margin-bottom: 10px;
 }
 
 a {
@@ -106,6 +107,7 @@ nav>a:hover {
 .highlight {
     font-weight: 500;
     font-size: large;
+    line-height: 24px;
     color: var(--blue);
 }
 
@@ -131,7 +133,7 @@ main>img {
 
 .banner img {
     margin: 0 auto;
-    max-width: 300px;
+    max-width: 250px;
 }
 
 .section {
@@ -297,12 +299,21 @@ footer {
 }
 
 @media (max-width: 750px) {
+    main {
+        padding: 1rem 2rem;
+    }
     .banner {
         text-align: center;
     }
     .banner .description {
         margin: 15px 0;
         text-align: initial;
+    }
+    .banner hr {
+        margin: 20px 0;
+    }
+    .banner img {
+        max-width: 200px;
     }
     .join {
         margin: 20px 0;
@@ -315,9 +326,6 @@ footer {
 @media (min-width: 750px) {
     .banner {
         display: flex;
-    }
-    .banner img {
-        margin: 0 auto;
     }
     .publication {
         display: flex;
