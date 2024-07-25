@@ -31,6 +31,9 @@
               {%- if (pub.data.presentation) -%}
                 <a href="{{ pub.data.presentation }}" target="_blank">presentation</a>
               {%- endif -%}
+              {%- if (pub.data.extras) -%}
+                <a href="{{ pub.data.extras[1] }}" target="_blank">{{ pub.data.extras[0] }}</a>
+              {%- endif -%}
             </div>
           </div>
 

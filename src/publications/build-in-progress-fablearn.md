@@ -13,4 +13,5 @@ year: 2015
 img: "assets/images/publications/build-in-progress.png"
 doi: "https://tifftseng.com/papers/fablearn_tseng.pdf"
 areas: ["design-documentation"]
+extras: ["demo", "https://tifftseng.com/archive/bip/chess/"]
 ---
