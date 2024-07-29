@@ -109,12 +109,13 @@ nav>a:hover {
     font-size: large;
     line-height: 24px;
     color: var(--blue);
+    margin: 30px 0;
 }
 
 main {
     max-width: 70rem;
     margin: 0 auto;
-    padding: 3rem 2rem;
+    padding: 3rem 5rem;
     min-height: 100vh;
 }
 
@@ -273,7 +274,7 @@ main>img {
     border-image: linear-gradient(to right, #28FFBB, #FFFA06, #FFFA06, #C9FF27, #C9FF27, #EE9EFF) 5;
     padding: 15px 10px;
     font-weight: 600;
-    margin-top: 10px;
+    margin-top: 30px;
 }
 
 .gradient-fill a {
