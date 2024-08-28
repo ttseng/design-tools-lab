@@ -1,7 +1,7 @@
 <div class="section" id="people">
     <h2>People</h2>
     <div class="people" id="people">
-        {%- for person in collections.people | reverse -%}
+        {%- for person in collections.people -%}
         <div class="person">
             <img src="{{ person.data.img }}"/>
             <div class="info">
