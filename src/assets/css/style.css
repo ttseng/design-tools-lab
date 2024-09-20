@@ -209,7 +209,11 @@ main>img {
     margin: 0 10px;
     padding: 0px 5px 3px;
 }
-
+.people {
+    display: flex;
+    gap: 2em;
+    flex-wrap: wrap;
+}
 .person {
     text-align: center;
     display: inline-block;
@@ -316,6 +320,12 @@ footer {
     .banner img {
         max-width: 200px;
     }
+    .people {
+        justify-content: space-evenly;
+    }
+    .person img {
+        width: 200px;
+    }
     .join {
         margin: 20px 0;
     }
@@ -338,10 +348,6 @@ footer {
     }
     .publication .info {
         max-width: 75%;
-    }
-    .people {
-        display: flex;
-        gap: 2em;
     }
     .person img {
         width: 150px;
