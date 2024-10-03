@@ -24,6 +24,7 @@ html {
 body {
     font-family: "IBM Plex Sans", sans-serif;
     line-height: 1.5;
+    font-weight: 200;
 }
 
 h1, h2, h3 {
@@ -42,6 +43,7 @@ h2 {
 a {
     text-decoration: none;
     color: var(--blue);
+    font-weight: 400;
 }
 
 img {
@@ -51,12 +53,17 @@ img {
 
 p {
     margin: 10px 0;
+    font-weight: 200;
 }
 
 hr {
     border: 0;
     border-bottom: solid 1.5px #d9d9d9;
     margin: 10px 0;
+}
+
+b {
+    font-weight: 500;
 }
 
 nav {
@@ -277,7 +284,7 @@ main>img {
     border: 5px solid;
     border-image: linear-gradient(to right, #28FFBB, #FFFA06, #FFFA06, #C9FF27, #C9FF27, #EE9EFF) 5;
     padding: 15px 10px;
-    font-weight: 600;
+    font-weight: 500;
     margin-top: 30px;
 }
 
