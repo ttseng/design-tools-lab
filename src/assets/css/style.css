@@ -40,6 +40,10 @@ h2 {
     margin-bottom: 10px;
 }
 
+h3{
+    margin: 20px 0;
+}
+
 a {
     text-decoration: none;
     color: var(--blue);
